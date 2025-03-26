@@ -12,19 +12,19 @@ const HeroSection = () => {
 
                     <div className="space-y-2">
                         <div className="flex items-center">
-                            <UserGroupIcon class={'size-6 mr-2'}/>
+                            <UserGroupIcon className={'size-6 mr-2'}/>
                             <span>1-op-1 support</span>
                         </div>
                         <div className="flex items-center">
-                            <AcademicCapIcon class={'size-6 mr-2'}/>
+                            <AcademicCapIcon className={'size-6 mr-2'}/>
                             <span>Studieruimtes</span>
                         </div>
                         <div className="flex items-center">
-                            <HomeIcon class={'size-6 mr-2'}/>
+                            <HomeIcon className={'size-6 mr-2'}/>
                             <span>Zaalverhuur</span>
                         </div>
                         <div className="flex items-center">
-                            <HeartIcon class={'size-6 mr-2'}/>
+                            <HeartIcon className={'size-6 mr-2'}/>
                             <span>Mental health events</span>
                         </div>
                     </div>
