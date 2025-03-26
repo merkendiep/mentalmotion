@@ -7,8 +7,7 @@ const HeroSection = () => {
             <div className="container mx-auto px-6 relative z-20 text-white">
                 <div className="max-w-2xl">
                     <h1 className="text-4xl font-bold mb-4">Door studenten. Voor studenten.</h1>
-                    <p className="text-xl mb-8">Door middel van peer support zorgen wij voor een mentaal gezonder
-                        Utrecht!</p>
+                    <p className="text-xl mb-8">Door middel van peer support zorgen wij voor een mentaal gezonder Utrecht!</p>
 
                     <div className="space-y-2">
                         <div className="flex items-center">

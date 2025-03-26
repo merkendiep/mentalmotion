@@ -25,7 +25,7 @@ const Hero = () => {
 
           <div className="flex gap-2 max-lg:justify-center">
             <a
-              href="#contactus"
+              href="#contact"
               className="btn btn-neutral md:btn-lg rounded-full font-urbanist shadow-md">
               Get Started
             </a>
