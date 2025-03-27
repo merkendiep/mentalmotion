@@ -7,10 +7,12 @@ import Footer from '../components/Footer.jsx';
 
 const Home = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-white pt-16">
+        <div className="flex flex-col min-h-screen bg-white">
             <Navbar/>
 
-            <Hero/>
+            <div className={'bg-[url(/images/hero-home.png)] bg-no-repeat bg-cover pt-24 pb-12 rounded-b-[8rem]'}>
+                <Hero/>
+            </div>
 
             <Services/>
 
