@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 
 const navigation = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "/" },
   { name: "De Peer", href: "#de-peer" },
-  { name: "Over ons", href: "#about-us" },
+  { name: "Over ons", href: "/about" },
   { name: "Nieuws", href: "#news" },
   { name: "Samenwerking", href: "#collaborate" },
-  { name: "Hulpvraag", href: "#help" },
+  { name: "Hulpvraag", href: "/help" },
 ]
 const NavBar = () => {
   const [active, setActive] = useState("Home")
