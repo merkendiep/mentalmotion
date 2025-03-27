@@ -1,13 +1,23 @@
 import './App.css'
-import Home from './pages/Home.jsx'
+import HomePage from './pages/HomePage.jsx'
+import ContactPage from './pages/ContactPage.jsx';
 
 function App() {
 
-  return (
-    <>
-        <Home />
-    </>
-  )
+    const currentPageName = window.location.pathname
+
+    const pages = {
+        '/contact': ContactPage,
+        '/': HomePage,
+    }
+
+    let currentPage = HomePage
+
+    if (Object.hasOwn(pages, currentPageName)) {
+        currentPage = pages[currentPageName]
+    }
+
+    return currentPage()
 }
 
 export default App

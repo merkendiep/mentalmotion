@@ -17,7 +17,7 @@ const Hero = () => {
 
           <h1 className="text-3xl font-black text-base-100 uppercase md:text-7xl">
             <span>Door studenten</span>
-            <span className="text-base-300/70"><br/> Voor studenten</span>
+            <span className="text-gray-700"><br/> Voor studenten</span>
           </h1>
 
           <p className="py-6 text-white lg:max-w-lg">

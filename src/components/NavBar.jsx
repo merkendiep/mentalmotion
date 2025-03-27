@@ -64,7 +64,7 @@ const NavBar = () => {
           ))}
         </div>
 
-        <a href="#contact" className="btn btn-primary">
+        <a href="/contact" className="btn btn-primary">
           Contact
         </a>
       </div>
