@@ -17,7 +17,7 @@ const Hero = () => {
 
           <h1 className="text-3xl font-black text-base-100 uppercase md:text-7xl">
             <span>Door studenten</span>
-            <span className="text-gray-700"><br/> Voor studenten</span>
+            <span className="text-gray-200/90"><br/> Voor studenten</span>
           </h1>
 
           <p className="py-6 text-white lg:max-w-lg">
@@ -26,19 +26,19 @@ const Hero = () => {
 
           <div className="space-y-2 text-white">
             <div className="flex items-center">
-              <UserGroupIcon className={'size-6 mr-2'}/>
+              <UserGroupIcon className={'size-8 mr-2'}/>
               <span>1-op-1 support</span>
             </div>
             <div className="flex items-center">
-              <AcademicCapIcon className={'size-6 mr-2'}/>
+              <AcademicCapIcon className={'size-8 mr-2'}/>
               <span>Studieruimtes</span>
             </div>
             <div className="flex items-center">
-              <HomeIcon className={'size-6 mr-2'}/>
+              <HomeIcon className={'size-8 mr-2'}/>
               <span>Zaalverhuur</span>
             </div>
             <div className="flex items-center">
-              <HeartIcon className={'size-6 mr-2'}/>
+              <HeartIcon className={'size-8 mr-2'}/>
               <span>Mental health events</span>
             </div>
           </div>

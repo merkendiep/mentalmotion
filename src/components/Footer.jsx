@@ -23,10 +23,10 @@ const Footer = () => {
 
           <nav className={'flex flex-col gap-2'}>
             <h6 className="footer-title">Onze partners</h6>
-            <a className="link link-hover">Over ons</a>
-            <a className="link link-hover">De Peer</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Samenwerking</a>
+            <a className="link link-hover">Partner logo 1</a>
+            <a className="link link-hover">Partner logo 2</a>
+            <a className="link link-hover">Partner logo 3</a>
+            <a className="link link-hover">Partner logo 4</a>
           </nav>
 
           <nav className={'flex flex-col w-fit'}>

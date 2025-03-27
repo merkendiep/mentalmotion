@@ -2,8 +2,8 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section>
-      <div className="flex w-full bg-[url(/images/plants-landscape.jpeg)] bg-no-repeat bg-cover pt-32 pb-16 flex-col justify-center text-white">
+    <section className={'mt-32'}>
+      <div className="flex w-full flex-col justify-center">
         <h1 className="text-center font-urbanist text-3xl font-semibold md:text-5xl">
           Neem contact op
         </h1>
