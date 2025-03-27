@@ -5,10 +5,12 @@ import Footer from '../components/Footer.jsx';
 
 const ContactPage = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-white pt-16">
+        <div className="flex flex-col min-h-screen bg-white">
             <Navbar/>
 
-            <Contact/>
+            <div className={'mb-16'}>
+                <Contact/>
+            </div>
 
             <Footer/>
         </div>

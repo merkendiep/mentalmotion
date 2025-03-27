@@ -2,8 +2,8 @@ import React from "react"
 
 const Footer = () => {
   return (
-      <footer className="footer bg-gray-800 text-base-100 px-8 py-14">
-        <div className={'w-7xl mx-auto sm:footer-horizontal'}>
+      <footer className="footer bg-gray-800 text-base-100 px-8 py-16">
+        <div className={'w-6xl mx-auto md:footer-horizontal'}>
           <nav className={'flex flex-col gap-2'}>
             <h6 className="footer-title">Services</h6>
             <a className="link link-hover">Peer support</a>
@@ -21,7 +21,15 @@ const Footer = () => {
             <a className="link link-hover">Samenwerking</a>
           </nav>
 
-          <nav className={'flex flex-col'}>
+          <nav className={'flex flex-col gap-2'}>
+            <h6 className="footer-title">Onze partners</h6>
+            <a className="link link-hover">Over ons</a>
+            <a className="link link-hover">De Peer</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Samenwerking</a>
+          </nav>
+
+          <nav className={'flex flex-col w-fit'}>
             <h6 className="footer-title">Social media</h6>
             <div className="grid grid-flow-col gap-4">
               <a>
