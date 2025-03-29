@@ -5,6 +5,7 @@ import AboutUsPage from './pages/AboutUsPage.jsx';
 import HelpPage from './pages/HelpPage.jsx';
 import RentLocationPage from './pages/RentLocationPage.jsx';
 import JoinAsPartnerPage from './pages/JoinAsPartnerPage.jsx';
+import PartnersPage from './pages/PartnersPage.jsx';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         '/contact': ContactPage,
         '/rent': RentLocationPage,
         '/join': JoinAsPartnerPage,
+        '/partners': PartnersPage,
     }
 
     let currentPage = HomePage
