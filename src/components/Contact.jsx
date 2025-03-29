@@ -2,12 +2,12 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section className={'mt-32'}>
+    <section className={'mt-32 lg:mt-44'}>
       <div className="flex w-full flex-col justify-center">
-        <h1 className="text-center font-urbanist text-3xl font-semibold md:text-5xl">
+        <h1 className="text-center text-3xl font-semibold md:text-5xl">
           Neem contact op
         </h1>
-        <span className="text-md mt-2 px-2 text-center font-urbanist md:mt-4 md:px-5 md:text-xl">
+        <span className="text-md mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
           Wij zullen proberen zo spoedig mogelijk bij je terug te komen.
         </span>
       </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 w-72 font-urbanist text-base-content">
+                <span className="mx-2 w-72 text-base-content">
                   Wolff en Dekenplein 5, 3532 XH Utrecht
                 </span>
               </p>
@@ -56,7 +56,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 w-72 truncate font-urbanist text-base-content">
+                <span className="mx-2 w-72 truncate text-base-content">
                   +31 (06) 0000 0000
                 </span>
               </p>
@@ -76,7 +76,7 @@ const Contact = () => {
                   />
                 </svg>
 
-                <span className="mx-2 w-72 truncate font-urbanist text-base-content">
+                <span className="mx-2 w-72 truncate text-base-content">
                   info@mentalmotion.nl
                 </span>
               </p>

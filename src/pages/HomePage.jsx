@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className="flex flex-col min-h-screen bg-white">
             <Navbar/>
 
-            <div className={'bg-[url(/images/hero-home.png)] bg-no-repeat bg-cover pt-24 pb-12 rounded-b-[8rem]'}>
+            <div className={'bg-[url(/images/hero-home.png)] bg-no-repeat bg-cover pt-24 pb-12 rounded-br-[8rem]'}>
                 <Hero/>
             </div>
 

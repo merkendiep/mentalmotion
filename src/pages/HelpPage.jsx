@@ -50,9 +50,10 @@ const AboutUsPage = () => {
         <div className="flex flex-col min-h-screen bg-white">
             <Navbar/>
 
-            <section className={'py-32'}>
+
+            <section className={'py-32 max-w-6xl mx-auto'}>
                 <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
-                    <div className="text-center font-urbanist lg:text-center">
+                    <div className="text-center lg:text-center">
                         <h1 className="text-3xl font-black text-gray-700 mb-8 uppercase md:text-6xl">
                             <span>Hulp vraag</span>
                         </h1>
@@ -72,7 +73,7 @@ const AboutUsPage = () => {
                 </div>
 
                 {/* Accordion FAQ */}
-                <div className={'max-w-7xl mx-auto'}>
+                <div className={'mx-auto'}>
                     {
                         frequentlyAskedQuestions.map((item, index) => (
                             <div key={index} className="collapse bg-base-100 border-base-300 border mb-2">

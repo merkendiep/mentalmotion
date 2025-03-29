@@ -27,9 +27,9 @@ const Team = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-urbanist text-center text-2xl font-semibold md:text-5xl">Wie zijn wij</h1>
+        <h1 className="text-center text-2xl font-semibold md:text-5xl">Wie zijn wij</h1>
 
-        <span className="text-md font-urbanist mt-4 px-2 text-center md:mt-4 md:px-5 md:text-xl">
+        <span className="text-md mt-4 px-2 text-center md:mt-4 md:px-5 md:text-xl">
           Ontmoet het gepassioneerde team dat Mental Motion mogelijk maakt.
         </span>
       </div>
@@ -42,8 +42,8 @@ const Team = () => {
             </figure>
 
             <div className="card-body items-center text-center">
-              <h2 className="font-urbanist card-title font-bold">{item.name}</h2>
-              <h2 className="font-urbanist font-semibold opacity-70">{item.position}</h2>
+              <h2 className="card-title font-bold">{item.name}</h2>
+              <h2 className="font-semibold opacity-70">{item.position}</h2>
             </div>
           </div>
         ))}

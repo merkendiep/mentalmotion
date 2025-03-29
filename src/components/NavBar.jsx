@@ -4,8 +4,24 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "De Peer", href: "#de-peer" },
   { name: "Over ons", href: "/about" },
-  { name: "Nieuws", href: "#news" },
-  { name: "Samenwerking", href: "#collaborate" },
+  {
+    name: "Nieuws",
+    href: false,
+    children: [
+      { name: "Blog", href: "/blog" },
+      { name: "Agenda", href: "/calendar" },
+      { name: "Schrijf je in voor de nieuwsbrief", href: "/newsletter" },
+    ]
+  },
+  {
+    name: "Samenwerking",
+    href: false,
+    children: [
+      { name: "Partnerschap", href: "/partners" },
+      { name: "Sluit je aan", href: "/join" },
+      { name: "Huur de peer", href: "/rent" },
+    ]
+  },
   { name: "Hulpvraag", href: "/help" },
 ]
 const NavBar = () => {
@@ -36,9 +52,11 @@ const NavBar = () => {
             <ul className="menu dropdown-content menu-md z-[1] mt-3 w-52 gap-2 rounded-box bg-base-100 p-2 shadow">
               {navigation.map((item, index) => (
                   <li key={index}>
-                    <a key={item.name} href={item.href} className="font-urbanist">
-                      {item.name}
-                    </a>
+                    {
+                        item.href && <a key={item.name} href={item.href}>
+                          {item.name}
+                        </a>
+                    }
                   </li>
               ))}
             </ul>
@@ -51,15 +69,29 @@ const NavBar = () => {
         <div className="navbar-center ml-10 hidden lg:flex">
           {navigation.map((item, index) => (
               <nav key={index} className="menu menu-horizontal px-1">
-                <a
-                    key={item.name}
-                    href={item.href}
-                    className={`btn btn-ghost rounded-full font-urbanist text-sm font-light ${
-                        active === item.name ? "bg-base-300" : ""
-                    }`}
-                    onClick={() => setActive(item.name)}>
-                  {item.name}
-                </a>
+                {
+                    item.href && <a
+                        key={item.name}
+                        href={item.href}
+                        className={`btn btn-ghost rounded-full ${
+                            active === item.name ? "bg-base-300" : ""
+                        }`}
+                        onClick={() => setActive(item.name)}>
+                      {item.name}
+                    </a>
+                }
+                {
+                    item.href === false && item.children && <details>
+                      <summary className={'btn btn-ghost'}>{item.name}</summary>
+                      <ul className="absolute top-[100%] bg-base-100 rounded-t-none p-2">
+                        {
+                          item.children.map((child, index) =>
+                              <li key={index}><a href={child.href}>{child.name}</a></li>
+                          )
+                        }
+                      </ul>
+                    </details>
+                }
               </nav>
           ))}
         </div>

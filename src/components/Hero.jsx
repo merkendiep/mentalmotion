@@ -12,7 +12,7 @@ const Hero = () => {
           className="max-w-xs rounded-b-box rounded-t-[14rem] shadow-2xl outline outline-base-content/5 md:max-w-md md:hidden"
         />
 
-        <div className="text-center font-urbanist lg:text-start">
+        <div className="text-center lg:text-start">
           <span className="badge badge-lg">Students peer support center</span>
 
           <h1 className="text-3xl font-black text-base-100 uppercase md:text-7xl">
@@ -44,11 +44,11 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-2 mt-4 max-lg:justify-center">
-            <a href="#someSectionDown" className="btn btn-primary md:btn-lg font-urbanist shadow-md">
+            <a href="#someSectionDown" className="btn btn-primary md:btn-lg shadow-md">
               Lees verder
             </a>
 
-            <a href="/contact" className="btn btn-link font-bold rounded-full font-urbanist text-white md:btn-lg">
+            <a href="/contact" className="btn btn-link font-bold rounded-full text-white md:btn-lg">
               Of neem contact op
             </a>
           </div>

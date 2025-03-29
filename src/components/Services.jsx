@@ -42,11 +42,11 @@ const Services = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center md:mt-20">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-urbanist text-center text-2xl font-semibold md:text-5xl">
+        <h1 className="text-center text-2xl font-semibold md:text-5xl">
           Wat bieden wij
         </h1>
 
-        <span className="text-md font-urbanist mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
+        <span className="text-md mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
           Hulp kan in vele vorm komen.
         </span>
       </div>
@@ -61,8 +61,8 @@ const Services = () => {
                 }
               </div>
 
-              <h2 className="font-urbanist card-title text-3xl font-black">{item.name}</h2>
-              <p className="text-md font-urbanist font-medium opacity-60">{item.description}</p>
+              <h2 className="card-title text-3xl font-black">{item.name}</h2>
+              <p className="text-md font-medium opacity-60">{item.description}</p>
             </div>
           </div>
         ))}

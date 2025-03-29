@@ -4,7 +4,7 @@ const LogoClouds = () => {
   return (
     <div className="flex w-full items-center justify-center py-10">
       <div>
-        <h2 className="text-base-400 mb-12 text-center font-urbanist text-lg font-semibold leading-8">
+        <h2 className="text-base-400 mb-12 text-center text-lg font-semibold leading-8">
           In samenwerking met
         </h2>
 

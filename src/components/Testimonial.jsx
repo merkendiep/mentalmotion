@@ -36,10 +36,10 @@ const Testimonial = () => {
   return (
     <div className="my-20 flex flex-col items-center justify-center md:my-32">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-center font-urbanist text-2xl font-semibold md:text-5xl">
+        <h1 className="text-center text-2xl font-semibold md:text-5xl">
           Testimonials
         </h1>
-        <span className="text-md mt-2 px-2 font-urbanist md:mt-4 md:px-5 md:text-xl">
+        <span className="text-md mt-2 px-2 md:mt-4 md:px-5 md:text-xl">
           What Our Clients Says About Us
         </span>
       </div>
@@ -47,7 +47,7 @@ const Testimonial = () => {
       <div className="max-w-7xl py-10">
         <div className="flex h-full items-center justify-center">
           <figure className="mx-10 mt-10">
-            <blockquote className="text-center font-urbanist font-bold leading-8 text-base-content lg:text-3xl">
+            <blockquote className="text-center font-bold leading-8 text-base-content lg:text-3xl">
               <p>“Some quote very nice”</p>
             </blockquote>
 
