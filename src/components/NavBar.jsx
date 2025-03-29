@@ -10,7 +10,7 @@ const navigation = [
     children: [
       { name: "Blog", href: "/blog" },
       { name: "Agenda", href: "/calendar" },
-      { name: "Schrijf je in voor de nieuwsbrief", href: "/newsletter" },
+      { name: "Nieuwsbrief", href: "/newsletter" },
     ]
   },
   {

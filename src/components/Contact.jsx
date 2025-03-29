@@ -2,14 +2,11 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section className={'mt-32 lg:mt-44'}>
+    <section>
       <div className="flex w-full flex-col justify-center">
         <h1 className="text-center text-3xl font-semibold md:text-5xl">
           Neem contact op
         </h1>
-        <span className="text-md mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
-          Wij zullen proberen zo spoedig mogelijk bij je terug te komen.
-        </span>
       </div>
 
       <div className="container mx-auto px-6 py-10">
@@ -197,7 +194,7 @@ const Contact = () => {
                     placeholder="Bericht"></textarea>
                 </div>
 
-                <button className="btn btn-neutral mt-6 w-full transform px-6 py-3 text-sm font-medium capitalize duration-300  ">
+                <button className="btn btn-primary mt-6 w-full transform px-6 py-3 text-sm font-medium capitalize duration-300  ">
                   Verstuur
                 </button>
               </form>

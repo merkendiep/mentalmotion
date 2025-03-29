@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage.jsx'
 import ContactPage from './pages/ContactPage.jsx';
 import AboutUsPage from './pages/AboutUsPage.jsx';
 import HelpPage from './pages/HelpPage.jsx';
+import RentLocationPage from './pages/RentLocationPage.jsx';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         '/about': AboutUsPage,
         '/help': HelpPage,
         '/contact': ContactPage,
+        '/rent': RentLocationPage,
     }
 
     let currentPage = HomePage
