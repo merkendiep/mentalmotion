@@ -66,6 +66,20 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+
+            <form>
+              <h6 className="footer-title mt-8">Nieuwsbrief</h6>
+              <fieldset className="w-80">
+                <div className="join text-gray-700">
+                  <input
+                      type="text"
+                      placeholder="uw e-mail adres"
+                      className="input input-bordered join-item"
+                  />
+                  <button className="btn btn-primary join-item">Aanmelden</button>
+                </div>
+              </fieldset>
+            </form>
           </nav>
         </div>
       </footer>
