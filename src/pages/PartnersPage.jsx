@@ -7,27 +7,74 @@ const partners = [
     {
         name: 'Gemeente Utrecht',
         logo: '/images/partners/GemeenteUtrecht.png',
-        description: 'Text over inzet van gemeente utrecht',
+        description: '[Text over inzet van partner]',
+        website: '',
     },
     {
         name: 'Hogeschool Utrecht',
         logo: '/images/partners/HU.jpg',
-        description: '',
+        description: '[Text over inzet van partner]',
+        website: '',
     },
     {
         name: 'MBO Utrecht',
         logo: '/images/partners/MBO-Utrecht.jpg',
-        description: '',
+        description: '[Text over inzet van partner]',
+        website: '',
     },
     {
         name: 'Nimento Utrecht',
         logo: '/images/partners/NimentoUtrecht.png',
-        description: '',
+        description: '[Text over inzet van partner]',
+        website: '',
     },
     {
         name: 'Grafisch Lyceum Utrecht',
         logo: '/images/partners/GLU.png',
-        description: '',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'Dock.nl',
+        logo: '/images/partners/dockNL.jpg',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'Frisse Gedachtes',
+        logo: '/images/partners/Frisse-gedachtes.png',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'Geluks BV',
+        logo: '/images/partners/geluks-bv.jpg',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'HKU',
+        logo: '/images/partners/HKU.jpg',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'IDIUS',
+        logo: '/images/partners/IDIUS.png',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'JOU jongerenwerk Utrech',
+        logo: '/images/partners/JouJongerenWerk.png',
+        description: '[Text over inzet van partner]',
+        website: '',
+    },
+    {
+        name: 'Power Peers',
+        logo: '/images/partners/PowerPeers.png',
+        description: '[Text over inzet van partner]',
+        website: '',
     },
 ];
 
@@ -53,20 +100,12 @@ const PartnersPage = () => {
                 <div className={'flex justify-center flex-row flex-wrap gap-8'}>
                     {
                         partners.map((partner, index) => {
-                            return <div key={index} className="card bg-white w-96 shadow-sm">
+                            return <div key={index} className="rounded-lg flex justify-center items-center bg-white w-96 py-4 shadow-sm">
                                 <figure>
                                     <img
                                         src={partner.logo}
                                         alt={partner.name + ' logo'}/>
                                 </figure>
-
-                                <div className="card-body">
-                                    <h2 className="card-title">{partner.name}</h2>
-                                    <p>{partner.description}</p>
-                                    <div className="card-actions justify-end">
-                                        <button className="btn btn-primary">Ga naar de website</button>
-                                    </div>
-                                </div>
                             </div>
                         })
                     }

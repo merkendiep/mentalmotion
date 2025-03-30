@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx';
 import Team from '../components/Team.jsx';
+import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
 
 const AboutUsPage = () => {
     return (
@@ -35,33 +36,41 @@ const AboutUsPage = () => {
                 </div>
             </div>
 
-            <div className="hero-content flex-col mx-auto lg:mb-16 lg:gap-16 lg:flex-row">
-                <img
-                    className="mask mask-squircle max-w-xs md:max-w-lg"
-                    src="/images/business-seminar-group.jpeg"/>
+            <TransitionWithBorder colorFrom={'bg-white'} colorTo={'bg-[#58B095]'}/>
 
-                <div className="text-center lg:text-start">
-                    <h1 className="text-3xl font-black text-gray-700 uppercase md:text-7xl">
-                        <span>Onze doelstelling</span>
-                    </h1>
+            <div className={'bg-[#58B095] text-white'}>
+                <div className="hero-content flex-col mx-auto lg:gap-16 lg:flex-row">
+                    <img
+                        className="mask mask-squircle max-w-xs md:max-w-lg"
+                        src="/images/business-seminar-group.jpeg"/>
 
-                    <p className="py-6 lg:max-w-lg">
-                        MentalMotion is een <strong>ontmoetingsplek</strong> én een <strong>kenniscentrum</strong> ineen.
-                        Want als er iemand expert is in weten wat studenten nodig hebben, zijn het studenten zelf.
-                        Zij begrijpen de problemen waar medestudenten tegenaanlopen als geen ander.
-                    </p>
+                    <div className="text-center lg:text-start">
+                        <h1 className="text-3xl font-black uppercase md:text-7xl">
+                            <span>Onze doelstelling</span>
+                        </h1>
 
-                    <p className={'mb-6'}>
-                        Daarom werken we vanuit <strong>Peer-Support</strong>. Onder gelijkgestemden voel je je gezien.
-                        Zo zorgen we voor een aanbod dat aansluit bij behoeften en voor verbinding met de
-                        omgeving en elkaar. Zo ontstaat er een sterkere <strong>sociale basis</strong>.
-                    </p>
+                        <p className="py-6 lg:max-w-lg">
+                            MentalMotion is een <strong>ontmoetingsplek</strong> én een <strong>kenniscentrum</strong> ineen.
+                            Want als er iemand expert is in weten wat studenten nodig hebben, zijn het studenten zelf.
+                            Zij begrijpen de problemen waar medestudenten tegenaanlopen als geen ander.
+                        </p>
+
+                        <p className={'mb-6'}>
+                            Daarom werken we vanuit <strong>Peer-Support</strong>. Onder gelijkgestemden voel je je gezien.
+                            Zo zorgen we voor een aanbod dat aansluit bij behoeften en voor verbinding met de
+                            omgeving en elkaar. Zo ontstaat er een sterkere <strong>sociale basis</strong>.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div className={'mb-16'}>
+            <TransitionWithBorder colorFrom={'bg-[#58B095]'} colorTo={'bg-white'}/>
+
+            <div className={'mb-8 pt-16'}>
                 <Team/>
             </div>
+
+            <TransitionWithBorder colorFrom={'bg-white'} colorTo={'bg-gray-800'}/>
 
             <Footer/>
         </div>
