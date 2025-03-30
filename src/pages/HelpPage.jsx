@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx';
+import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
 
 const frequentlyAskedQuestions = [
     {
@@ -51,7 +52,7 @@ const AboutUsPage = () => {
             <Navbar/>
 
 
-            <section className={'py-32 max-w-6xl mx-auto'}>
+            <section className={'pt-32 max-w-6xl mx-auto'}>
                 <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
                     <div className="text-center lg:text-center">
                         <h1 className="text-3xl font-black text-gray-700 mb-8 uppercase md:text-6xl">
@@ -85,6 +86,8 @@ const AboutUsPage = () => {
                     }
                 </div>
             </section>
+
+            <TransitionWithBorder colorFrom={'bg-white'} colorTo={'bg-gray-800'}/>
 
             <Footer/>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx';
+import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
 
 const JoinAsPartnerPage = () => {
     return (
@@ -95,6 +96,8 @@ const JoinAsPartnerPage = () => {
                     <p className={'mb-6'}>Help mee aan het welzijn van de Utrechtse student!</p>
                 </div>
             </div>
+
+            <TransitionWithBorder colorFrom={'bg-white'} colorTo={'bg-gray-800'}/>
 
             <Footer/>
         </div>

@@ -1,8 +1,9 @@
 import React, { useState } from "react"
+import { ChevronDownIcon } from '@heroicons/react/24/solid/index.js';
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "De Peer", href: "#de-peer" },
+  { name: "De Peer", href: "/de-peer" },
   { name: "Over ons", href: "/about" },
   {
     name: "Nieuws",
@@ -25,7 +26,7 @@ const navigation = [
   { name: "Hulpvraag", href: "/help" },
 ]
 const NavBar = () => {
-  const [active, setActive] = useState("Home")
+  const [active, setActive] = useState(window.location.pathname)
 
   return (
     <div className="fixed w-full top-0 z-50 flex justify-center py-4 px-4">
@@ -74,7 +75,7 @@ const NavBar = () => {
                         key={item.name}
                         href={item.href}
                         className={`btn btn-ghost rounded-full ${
-                            active === item.name ? "bg-base-300" : ""
+                            active === item.href ? "bg-base-300" : ""
                         }`}
                         onClick={() => setActive(item.name)}>
                       {item.name}
@@ -82,7 +83,10 @@ const NavBar = () => {
                 }
                 {
                     item.href === false && item.children && <details>
-                      <summary className={'btn btn-ghost'}>{item.name}</summary>
+                      <summary className={'btn btn-ghost'}>
+                        {item.name}
+                        <ChevronDownIcon className={'size-4'}/>
+                      </summary>
                       <ul className="absolute top-[100%] bg-base-100 rounded-t-none p-2">
                         {
                           item.children.map((child, index) =>
