@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '@src/components/Navbar.jsx'
 import Footer from '@src/components/Footer.jsx';
 import Team from '@src/components/Team.jsx';
-import TransitionWithBorder from '@src/components/TransitionWithBorder.jsx';
+import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
 
 const AboutUsPage = () => {
     return (
