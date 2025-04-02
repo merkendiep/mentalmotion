@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx'
-import Hero from '../components/Hero.jsx';
-import Services from '../components/Services.jsx';
-import Footer from '../components/Footer.jsx';
-import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Footer from '../components/Footer';
+import TransitionWithBorder from '../components/TransitionWithBorder';
 
 const HomePage = () => {
     return (
