@@ -74,7 +74,7 @@ const NavBar = () => {
                     item.href && <a
                         key={item.name}
                         href={item.href}
-                        className={`btn btn-ghost rounded-full ${
+                        className={`btn btn-ghost ${
                             active === item.href ? "bg-base-300" : ""
                         }`}
                         onClick={() => setActive(item.name)}>
@@ -83,7 +83,9 @@ const NavBar = () => {
                 }
                 {
                     item.href === false && item.children && <details>
-                      <summary className={'btn btn-ghost'}>
+                      <summary className={`btn btn-ghost ${
+                          item.children.find(child => child.href === active) ? "bg-base-300" : ""
+                      }`}>
                         {item.name}
                         <ChevronDownIcon className={'size-4'}/>
                       </summary>
@@ -100,7 +102,7 @@ const NavBar = () => {
           ))}
         </div>
 
-        <a href="/contact" className="btn btn-primary">
+        <a href="/contact" className="btn btn-primary ml-4">
           Contact
         </a>
       </div>
