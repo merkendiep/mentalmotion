@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '@/components/Navbar.jsx'
-import Contact from '@/components/Contact.jsx';
-import Footer from '@/components/Footer.jsx';
-import TransitionWithBorder from '@/components/TransitionWithBorder.jsx';
+import Navbar from '/src/components/Navbar.jsx'
+import Contact from '/src/components/Contact.jsx';
+import Footer from '/src/components/Footer.jsx';
+import TransitionWithBorder from '/src/components/TransitionWithBorder.jsx';
 
 const ContactPage = () => {
     return (
