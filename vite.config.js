@@ -14,7 +14,14 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@/': path.resolve(_dirname, './src/'),
+            '@/': path.resolve(_dirname, 'src/'),
+        },
+    },
+    build: {
+        rollupOptions: {
+            input: {
+                main: path.resolve(_dirname, 'index.html'),
+            },
         },
     },
 })
