@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '@src/components/Navbar.jsx'
-import Footer from '@src/components/Footer.jsx';
-import Team from '@src/components/Team.jsx';
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx';
+import Team from '../components/Team.jsx';
 import TransitionWithBorder from '../components/TransitionWithBorder.jsx';
 
 const AboutUsPage = () => {
